@@ -2,10 +2,9 @@
 import { Route, Routes } from "react-router-dom";
 
 /* APPLICATION */
-import "./App.css";
-import { Header } from "./Header/Header";
-import { Tasks } from "./Lists/Tasks";
-import { Categories } from "./Lists/Categories";
+import { Header } from "./components/Header";
+import { Tasks } from "./pages/Tasks";
+import { Categories } from "./pages/Categories";
 
 function App() {
   return (
@@ -14,7 +13,7 @@ function App() {
       <Routes>
         <Route path="/tasks" element={<Tasks />} />
         <Route path="/categories" element={<Categories />} />
-        <Route index element={<Tasks />} />
+        <Route index element={<Tasks />} /> 
       </Routes>
     </div>
   );
